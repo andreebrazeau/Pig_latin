@@ -38,6 +38,9 @@ class TestPigLatin(unittest.TestCase):
     def test_pig_latin_word(self):
         self.assertEqual(pig_latin.pig_latin_word("Bananas!"), "Ananasbay!")
 
+    def test_check_if_real_word(self):
+        self.assertEqual(pig_latin.check_if_real_word("bananas"),True)
+        self.assertEqual(pig_latin.check_if_real_word("14"),False)
     
     # def main(self):
     #     self.assertEqual(pig_latin.main("Bananas are great!"), "Ananasbay areay eatgray!")
